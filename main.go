@@ -54,7 +54,7 @@ func FetchGlobalIP() (string, error) {
 }
 
 func LoadGlobalIP() (string, error) {
-	data, err := ioutil.ReadFile(`ip`)
+	data, err := ioutil.ReadFile("ip")
 	if err != nil {
 		return "", err
 	}
