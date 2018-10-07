@@ -1,4 +1,4 @@
-API     := `cat api`
+API     := $(shell cat api)
 LDFLAGS := -ldflags=" -w -X \"main.API=$(API)\""
 GCFLAGS := -gcflags="-trimpath=${GOPATH}"
 USER    := ${USER}
